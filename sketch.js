@@ -5,9 +5,7 @@ var database,position;
 function preload(){
    bg =loadImage("Hot Air Ballon-01.png");
    balloonImage1=loadAnimation("Hot Air Ballon-02.png");
-   balloonImage2=loadAnimation("Hot Air Ballon-02.png","Hot Air Ballon-03.png",
-   "hotairballoon1.png","hotairballoon2.png","hotairballoon2.png",
-   "hotairballoon2.png","hotairballoon3.png","hotairballoon3.png","hotairballoon3.png");
+   balloonImage2=loadAnimation("Hot Air Ballon-02.png");
   }
 
 //Function to set initial environment
