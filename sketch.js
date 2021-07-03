@@ -10,7 +10,7 @@ function preload(){
 
 //Function to set initial environment
 function setup() {
-   dataase = firebase.database();
+   database = firebase.database();
   createCanvas(1500,700);
 
   balloon=createSprite(250,450,150,150);
