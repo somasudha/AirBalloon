@@ -30,36 +30,19 @@ function setup() {
 function draw() {
   background(bg);
 
-  
-
-
   if(keyDown(LEFT_ARROW)){
-   
-    //write code to move air balloon in left direction
-    updateHeight(-10,0)
-    
-    
-    
+    balloon.x = balloon.x-15;
   }
   else if(keyDown(RIGHT_ARROW)){
-   
-    //write code to move air balloon in right direction
-    updateHeight(10,0)
-    
+    balloon.x = balloon.x+15;
   }
   else if(keyDown(UP_ARROW)){
-    
-    //write code to move air balloon in up direction
-    updateHeight(0,-10)
-   
-    balloon.scale = balloon.scale -0.01
+    balloon.y = balloon.y-15;
+    balloon.scale = balloon.scale-0.01;
   }
   else if(keyDown(DOWN_ARROW)){
-   
-    //write code to move air balloon in down direction
-    updateHeight(0,10)
-   
-    balloon.scale = balloon.scale + 0.01
+    balloon.y =balloon.y+15;
+    balloon.scale = balloon.scale+0.01;
   }
 
   drawSprites();
